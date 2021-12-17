@@ -7,11 +7,10 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
     "./index.html",
     "./models/transaction.js",
-    "./public/css/style.css",
-    "./public/js/idb.js",
-    "./public/js/index.js",
-    "./routes/api.js",
-    "./dist/schedule.bundle.js"
+    "./css/style.css",
+    "./js/idb.js",
+    "./js/index.js",
+    "./manifect.json",
 ];
 // install the eventListner
 self.addEventListener('install', function (e) {
@@ -22,6 +21,7 @@ self.addEventListener('install', function (e) {
         })
     )
 });
+/*
 // activate
 self.addEventListener("activate", function (e) {
     e.waitUntil(
@@ -40,13 +40,14 @@ self.addEventListener("activate", function (e) {
         })
     );
 });
+*/
 // fech
-self.addEventListner("fetch", function(e){
+self.addEventListner("fetch", function (e) {
     e.respondWith(
-        caches.match(e.request).then(function(request){
-            if(request){
+        caches.match(e.request).then(function (request) {
+            if (request) {
                 return request;
-            }else {
+            } else {
                 return fetch(e.request);
             }
         })
