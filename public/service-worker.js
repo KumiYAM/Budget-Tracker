@@ -6,18 +6,24 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 
 const FILES_TO_CACHE = [
     "./index.html",
-    "./models/transaction.js",
-    "./css/style.css",
+     "./css/style.css",
     "./js/idb.js",
     "./js/index.js",
     "./manifect.json",
+    "./icon/icon-72x72.png",
+    "./icons/icon-96x96.png",
+    "./icons/icon-128/128png",
+    "./icons/icon-144x144.png",
+    "./icons/icon-192x192.png",
+    "./icons/icon-384x384.png",
+    "./icons/icon-512x512.png"
 ];
 // install the eventListner
 self.addEventListener('install', function (e) {
     e.waitUntil(
         caches.open(CACHE_NAME).then(function (cache) {
             console.log("Your files were pre-cached sucessfully!" + CACHE_NAME);
-            return cache.addAll(FILES_TO_CACHE);
+            return Caches.addAll(FILES_TO_CACHE);
         })
     )
 });
