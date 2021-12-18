@@ -42,7 +42,7 @@ self.addEventListener("activate", function (e) {
 });
 */
 // fech
-self.addEventListner("fetch", function (e) {
+self.addEventListener("fetch", function (e) {
     e.respondWith(
         caches.match(e.request).then(function (request) {
             if (request) {
