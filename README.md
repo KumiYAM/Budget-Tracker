@@ -1,13 +1,57 @@
+🏗️ Budget-Tracker
+## Description
+    This application "Budget-Tracker" allowing user to access that information at any thime even offline. The user's financial informations, expenses and deposits, were entered and stored while user have no internet connection, and keep recording in application. The total should be updated when user brought back to internet online.   
+
+## Table of Contents
+
+- [Title](#title)
+- [Description](#description)
+- [Installatin](#installation)
+- [Usage](#usage)
+- [Licens](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [How to ask Question](#Questions)
+- [Language](#language)
+
+## Installation
+   Due to on going process of building the application, installation is not avalable to public now.<br/>
+   The application will be invoked by using the following command on command line:<br/>
+   `npm start`
+
+## Usage
+User Story:<br/>
+AS AN avid traveler
+I WANT to be able to track my withdrawals and deposits with or without a data/internet connection<br/>
+SO THAT my account balance is accurate when I am traveling<br/>
+## License
+![unlicensed](https://img.shields.io/badge/unlicense-%24%7Blicense%7D-green)
+
+
+## Contributing
+Undefined
+
+## Tests
+In-progress 
+
+## How to ask questions
+GitHub User Name :  ("https://github.com/KumiYAM")
+
+## Language
+<!-- ![JavaScript](https://img.shields.io/badge/ -->
+![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
+
+
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+SELF NOTES for submission 
+
+
 Offline Functionality
 You’ll need to use IndexedDB to add offline functionality. Review Module 18: NoSQL, Lesson 4: Add Offline Persistence with IndexedDB as a refresher on how to add this to your application.
 
 You’ll also need to add a service worker to your application. Review Module 19: Progressive Web Applications (PWA), Lesson 4: Using Service Workers as a refresher on how to add this to your application.
 ===
-User Story
-AS AN avid traveler
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling 
-
 Acceptance Criteria
 GIVEN a budget tracker without an internet connection
 WHEN the user inputs an expense or deposit
