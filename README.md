@@ -1,6 +1,6 @@
 🏗️ Budget-Tracker
 ## Description
-    This application "Budget-Tracker" allowing user to access that information at any thime even offline. The user's financial informations, expenses and deposits, were entered and stored while user have no internet connection, and keep recording in application. The total should be updated when user brought back to internet online.   
+    This application "Budget-Tracker" allow user to access that information at any time even offline. The user's financial informations, expenses and deposits, were entered and stored while user have no internet connection, and keep recording in application. The total should be updated when user brought back to internet online.   
 
 ## Table of Contents
 
